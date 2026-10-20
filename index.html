@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#07120f" name="theme-color"/>
+<meta content="الجونة — حكاية البحر الأحمر ومواجهات الأهلي والزمالك وانتصارات الجونة في المباريات." name="description"/>
+<title>الجونة | البحر له حكاية</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#080e1b;--surface:#111a2b;--surface2:#192642;--white:#f6f6ef;--muted:#aab8ae;--lime:#ffd12f;--club-red:#e4553f;--club-navy:#17264d;--line:rgba(255,255,255,.13);--red:#e4553f;--blue:#17264d;--max:1240px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--white);font-family:Cairo,sans-serif;line-height:1.75;overflow-x:hidden}
+body.en{font-family:Manrope,sans-serif}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+img{display:block;max-width:100%}
+.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+.header{position:sticky;top:0;z-index:50;background:rgba(7,18,15,.88);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.nav{height:78px;display:flex;align-items:center;gap:28px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;font-size:20px;margin-inline-end:auto}
+.logo-mark{width:44px;height:44px;display:grid;place-items:center;background:var(--club-red);color:#fff;border-radius:14px;font-size:24px;transform:rotate(-5deg)}
+.logo small{display:block;font:800 9px Manrope,sans-serif;letter-spacing:.17em;color:var(--muted)}
+.links{display:flex;gap:24px;font-size:13px;font-weight:800;color:#d5ded7}
+.links a:hover{color:var(--lime)}
+.actions{display:flex;gap:9px}
+.lang,.menu{border:1px solid var(--line);background:transparent;color:var(--white);border-radius:99px;padding:9px 14px;font-size:12px;font-weight:800}
+.menu{display:none}
+.hero{min-height:690px;display:flex;align-items:center;position:relative;isolation:isolate;overflow:hidden;background:#10231d}
+.hero:before{content:"";position:absolute;inset:0;z-index:-2;background:linear-gradient(90deg,rgba(4,9,20,.94) 0%,rgba(4,9,20,.66) 52%,rgba(4,9,20,.18) 100%),url('https://elgounafc.wordpress.com/wp-content/uploads/2009/08/packedtotherafters180309.jpg') center 45%/cover}
+.hero:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,var(--bg),transparent 36%),radial-gradient(ellipse at 78% 25%,rgba(215,255,104,.18),transparent 35%)}
+.hero-copy{padding:100px 0 130px;max-width:790px}
+.tag{display:inline-flex;align-items:center;gap:10px;color:#ffd12f;font-size:11px;font-weight:900;letter-spacing:.14em}
+.tag:before{content:"";height:2px;width:28px;background:var(--lime)}
+h1{font-size:clamp(48px,8vw,100px);line-height:1.05;letter-spacing:-.065em;margin:22px 0;font-weight:900}
+h1 span{display:block;color:var(--lime)}
+.hero p{font-size:clamp(15px,1.5vw,19px);color:#d3ddd5;max-width:610px;margin:0}
+.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;justify-content:center;align-items:center;gap:10px;padding:13px 22px;border-radius:99px;font-size:13px;font-weight:900;transition:.2s}
+.btn:hover{transform:translateY(-3px)}
+.primary{background:var(--club-red);color:#fff}
+.secondary{border:1px solid #ffffff55;background:#ffffff0d}
+.hero-foot{position:absolute;bottom:28px;inset-inline:0;font:800 10px Manrope,sans-serif;letter-spacing:.16em;color:#dce5de}
+.hero-foot b{color:var(--lime)}
+.stats-holder{position:relative;margin-top:-48px;z-index:2}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:rgba(16,31,26,.95);border:1px solid var(--line);border-radius:22px;overflow:hidden;backdrop-filter:blur(12px)}
+.stat{padding:22px 25px;border-inline-end:1px solid var(--line)}
+.stat:last-child{border:0}
+.stat strong{display:block;color:var(--lime);font:900 clamp(24px,3vw,38px) Manrope,sans-serif;line-height:1.4}
+.stat span{font-size:12px;color:var(--muted);font-weight:700}
+.section{padding:100px 0}
+.section-head{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:34px}
+.eyebrow{color:#ffd12f;font:900 10px Manrope,sans-serif;letter-spacing:.16em}
+.section h2{font-size:clamp(34px,5vw,60px);line-height:1.13;letter-spacing:-.055em;margin:9px 0 0;font-weight:900}
+.section-head p{max-width:470px;color:var(--muted);font-size:14px;margin:0}
+.story-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
+.story{position:relative;min-height:470px;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--surface)}
+.story img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;transition:transform .7s}
+.story:hover img{transform:scale(1.04)}
+.story:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(4,9,20,.96),rgba(4,9,20,.04) 82%)}
+.story-copy{position:absolute;z-index:2;bottom:0;inset-inline:0;padding:30px}
+.story-copy small{color:var(--lime);font:900 10px Manrope,sans-serif;letter-spacing:.15em}
+.story-copy h3{font-size:clamp(25px,3vw,38px);line-height:1.2;margin:9px 0}
+.story-copy p{color:#d0dcd4;font-size:13px;max-width:480px;margin:0}
+.stack{display:grid;gap:18px}
+.stack .story{min-height:226px}
+.stadium{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:58px}
+.photo{min-height:480px;position:relative;border-radius:24px;overflow:hidden;border:1px solid var(--line)}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.photo:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#080e1b88,transparent 70%)}
+.photo-label{position:absolute;bottom:20px;inset-inline-start:20px;z-index:1;background:var(--lime);color:#07120f;padding:8px 14px;border-radius:99px;font:900 10px Manrope,sans-serif}
+.copy p{color:var(--muted);font-size:15px}
+.copy h2{font-size:clamp(36px,5vw,58px);line-height:1.1;margin:10px 0 20px}
+.quote{margin-top:25px;border-inline-start:3px solid var(--lime);background:#ffffff08;padding:20px;border-radius:0 16px 16px 0;font-size:17px;font-weight:800}
+.quote small{display:block;color:#ffd12f;font:900 10px Manrope,sans-serif;letter-spacing:.12em;margin-top:8px}
+.results{background:#0c1425;border-block:1px solid var(--line)}
+.result-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:28px}
+.result-head p{max-width:660px;color:var(--muted);font-size:14px}
+.tabs{display:flex;gap:7px;padding:5px;border:1px solid var(--line);border-radius:99px;flex-shrink:0}
+.tab{border:0;background:transparent;color:var(--muted);padding:10px 18px;border-radius:99px;font-size:12px;font-weight:900}
+.tab[aria-selected=true]{background:var(--club-red);color:#fff}
+.feature-result{display:grid;grid-template-columns:.8fr 1.2fr;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--surface)}
+.feature-image{position:relative;min-height:330px}
+.feature-image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.feature-image:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#07120f55,transparent)}
+.feature-copy{padding:clamp(25px,4vw,48px);display:flex;flex-direction:column;justify-content:center}
+.match-label{color:#ffd12f;font:900 10px Manrope,sans-serif;letter-spacing:.15em}
+.scoreboard{display:flex;align-items:center;gap:15px;margin:20px 0;padding:22px 18px;border:1px solid #ffd12f88;border-radius:16px;background:linear-gradient(180deg,#101522,#080b13);box-shadow:inset 0 0 24px #ffd12f0b,0 10px 30px #0004;position:relative}
+.scoreboard:before{content:"FULL TIME  •  MATCH CENTRE";position:absolute;top:7px;inset-inline:0;text-align:center;color:#ffd12f;font:800 8px Manrope,sans-serif;letter-spacing:.18em;opacity:.8}
+.team{flex:1;text-align:center;font-weight:900}
+.team-logo{width:58px;height:58px;display:grid;place-items:center;border-radius:50%;margin:0 auto 8px;font:900 12px Manrope,sans-serif;overflow:hidden;background:#f7f7f2;padding:5px;border:2px solid var(--club-red);box-shadow:0 0 0 3px #e4553f20;color:#111}
+.team-logo img{width:100%;height:100%;object-fit:contain;padding:6px}
+.rival-crest{border-color:var(--club-navy)}
+.rival-crest img{width:100%;height:100%;object-fit:contain;padding:6px;border-radius:50%;background:#fff}
+.goals{font:900 clamp(30px,4vw,48px) Manrope,sans-serif;color:#ffd12f;white-space:nowrap;text-shadow:0 0 18px #ffd12f44;font-variant-numeric:tabular-nums}
+.feature-copy h3{font-size:clamp(23px,3vw,34px);line-height:1.2;margin:0 0 8px}
+.feature-copy p{font-size:13px;color:var(--muted);margin:0}
+.result-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:16px}
+.note{font-size:11px;color:var(--muted);margin-top:16px}
+.timeline{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.time{border:1px solid var(--line);border-radius:18px;padding:22px;background:linear-gradient(145deg,var(--surface2),#101f1a55);min-height:180px}
+.time strong{font:900 25px Manrope,sans-serif;color:#ffd12f}
+.time h3{font-size:16px;margin:10px 0 4px}
+.time p{font-size:12px;color:var(--muted);margin:0}
+.gallery{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-template-rows:220px 220px;gap:13px}
+.gallery figure{position:relative;margin:0;border-radius:18px;overflow:hidden;border:1px solid var(--line)}
+.gallery figure:first-child{grid-row:span 2}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.gallery figure:hover img{transform:scale(1.05)}
+.gallery figcaption{position:absolute;bottom:0;inset-inline:0;padding:36px 16px 14px;background:linear-gradient(transparent,#030c09e8);font-size:12px;font-weight:800}
+.closing{padding:15px 0 90px}
+.closing-box{position:relative;overflow:hidden;border:1px solid #d7ff6844;border-radius:28px;padding:clamp(30px,6vw,70px);background:linear-gradient(115deg,#26355a,#10192c)}
+.closing-box:after{content:"GOUNA";position:absolute;inset-inline-end:-15px;bottom:-72px;font:900 clamp(90px,18vw,220px) Manrope,sans-serif;letter-spacing:-.1em;color:#ffd12f10;pointer-events:none}
+.closing-box h2{font-size:clamp(36px,5vw,62px);line-height:1.12;max-width:760px;position:relative;z-index:1}
+.closing-box p{max-width:650px;color:var(--muted);position:relative;z-index:1}
+.footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:11px}
+.footer-inner{display:flex;justify-content:space-between;gap:20px}
+.footer strong{color:var(--white)}
+.logo-mark.crest-mark{background:#fff;border:1px solid rgba(255,255,255,.22);transform:none;overflow:hidden;padding:3px}
+.logo-mark.crest-mark img{width:100%;height:100%;object-fit:contain}
+.result-card{border:1px solid #ffffff18;background:linear-gradient(145deg,#151f34,#0d1422);border-radius:17px;padding:18px}
+.winner-badge{display:flex;align-items:center;gap:10px;margin-top:15px;padding:10px 13px;background:#e4553f16;border:1px solid #e4553f55;border-radius:13px;color:#ffd4cd;font-size:12px;font-weight:900}
+.winner-badge img{width:32px;height:32px;object-fit:contain;background:#fff;border-radius:8px;padding:3px}
+.legends-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.legend-card{border:1px solid var(--line);background:linear-gradient(145deg,var(--surface),#111827);border-radius:20px;padding:24px 20px;min-height:210px;position:relative;overflow:hidden}
+.legend-card:after{content:'GFC';position:absolute;bottom:-27px;inset-inline-end:-5px;font:900 76px Manrope,sans-serif;color:#ffffff08;pointer-events:none}
+.legend-number{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--club-red);color:#fff;font:900 13px Manrope,sans-serif;margin-bottom:20px}
+.legend-card h3{font-size:21px;margin:0 0 8px;position:relative;z-index:1}
+.legend-card p{font-size:12px;color:var(--muted);margin:0;position:relative;z-index:1}
+.wins-clubs{padding-top:30px}
+.wins-club-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.wins-club{position:relative;display:flex;align-items:center;gap:22px;min-width:0;padding:25px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(135deg,#192642,#0e1628);overflow:hidden}
+.wins-club>img{width:82px;height:82px;object-fit:contain;padding:8px;background:#fff;border-radius:18px;flex-shrink:0}
+.wins-club h3{font-size:20px;margin:0 0 3px}
+.wins-club strong{display:block;font:900 30px Manrope,sans-serif;color:var(--lime);line-height:1.3}
+.wins-club p{margin:5px 0 0;color:var(--muted);font-size:12px}
+.win-stamp{margin-inline-start:auto;align-self:flex-start;white-space:nowrap;padding:6px 10px;border-radius:99px;background:#e4553f22;border:1px solid #e4553f66;color:#ffb4a8;font-size:10px;font-weight:900}
+.derby-section{padding-top:70px}
+.derby-banner{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:24px 28px;margin-bottom:18px;border:1px solid #ffd12f44;border-radius:22px;background:linear-gradient(120deg,#192642,#0b1120);box-shadow:inset 0 1px #ffffff0a}
+.derby-clubs{display:flex;align-items:center;gap:18px}
+.derby-club{display:flex;align-items:center;gap:10px;font-weight:900}
+.derby-club img{width:56px;height:56px;object-fit:contain;background:#fff;border-radius:14px;padding:5px}
+.derby-vs{font:900 15px Manrope,sans-serif;color:var(--lime);letter-spacing:.12em}
+.derby-meta{display:grid;gap:2px;text-align:end;color:var(--muted);font-size:12px}
+.derby-meta strong{font:900 18px Manrope,sans-serif;color:var(--lime)}
+.derby-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.derby-gallery figure{position:relative;overflow:hidden;margin:0;border:1px solid var(--line);border-radius:20px;background:var(--surface)}
+.derby-gallery a{display:block;overflow:hidden;background:#0b1120}
+.derby-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .5s}
+.derby-gallery figure:hover img{transform:scale(1.025)}
+.derby-gallery figcaption{padding:14px 17px;font-size:13px;font-weight:800}
+.match-gallery-note{font-size:11px;color:var(--muted);margin-top:13px}
+.match-gallery-note a,.source-link{color:var(--lime);text-decoration:underline;text-underline-offset:3px}
+.legend-player-photo{position:relative;padding-top:30px}
+.legend-portrait{width:100%;height:185px;object-fit:cover;object-position:center 30%;border-radius:13px;margin:12px 0 15px;background:#fff}
+.source-link{display:inline-block;font-size:11px;margin-top:8px}
+@media(max-width:900px){.links{gap:13px}.links a{font-size:11px}.stadium{gap:28px}.timeline{grid-template-columns:repeat(2,1fr)}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:230px 170px 170px}.gallery figure:first-child{grid-row:span 2}.result-grid{grid-template-columns:1fr 1fr}.legends-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.derby-banner{display:block;padding:18px}.derby-clubs{justify-content:center;margin-bottom:18px}.derby-meta{text-align:center}.derby-gallery{grid-template-columns:1fr}.derby-gallery img{aspect-ratio:16/10}.legend-portrait{height:220px}}
+@media(max-width:700px){.wins-club-grid{grid-template-columns:1fr}.wins-club{padding:18px;gap:14px}.wins-club>img{width:64px;height:64px}.win-stamp{font-size:9px;padding:5px 7px}.result-grid{grid-template-columns:1fr}}
+@media(max-width:680px){.wrap{width:calc(100% - 30px)}.nav{height:68px;gap:10px}.logo{font-size:17px}.logo-mark{width:38px;height:38px}.menu{display:block}.links{display:none;position:absolute;top:68px;inset-inline:0;background:#081711;padding:14px 20px 20px;flex-direction:column;gap:0;border-bottom:1px solid var(--line)}.links.open{display:flex}.links a{font-size:14px;padding:10px 4px;border-bottom:1px solid var(--line)}.hero{min-height:650px}.hero:before{background-image:linear-gradient(90deg,#040d0abf,#040d0a77),url('https://elgounafc.wordpress.com/wp-content/uploads/2009/08/airportend101109copyright.jpg');background-position:58% center}.hero-copy{padding:90px 0 115px}h1{font-size:clamp(43px,12vw,68px)}.hero p{font-size:15px}.stats-holder{margin-top:-34px}.stats{grid-template-columns:1fr 1fr}.stat{padding:16px 14px;border-bottom:1px solid var(--line)}.stat:nth-child(2){border-inline-end:0}.stat:nth-child(3),.stat:nth-child(4){border-bottom:0}.stat strong{font-size:25px}.section{padding:74px 0}.section-head,.result-head{display:block}.section-head p{margin-top:16px}.story-grid,.stadium,.feature-result{grid-template-columns:1fr}.story{min-height:390px}.stack{gap:13px}.stack .story{min-height:240px}.photo{min-height:340px;order:2}.copy{order:1}.result-head .tabs{display:inline-flex;margin-top:10px}.feature-image{min-height:230px}.feature-copy{padding:24px}.timeline{grid-template-columns:1fr 1fr;gap:9px}.time{padding:16px;min-height:160px}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:205px 145px 145px;gap:9px}.gallery figure:first-child{grid-row:span 2}.gallery figcaption{font-size:10px;padding:30px 10px 10px}.closing{padding-bottom:60px}.footer-inner{flex-direction:column}.hero-foot{font-size:8px}}
+@media(max-width:520px){.legends-grid{grid-template-columns:1fr}.winner-badge{font-size:9px}.legend-card{min-height:160px}}
+@media(max-width:390px){.timeline{grid-template-columns:1fr}.buttons .btn{width:100%}.lang{padding:8px 10px}.scoreboard{gap:8px}.team-logo{width:48px;height:48px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="header">
+<nav aria-label="Main navigation" class="nav wrap">
+<a class="logo" href="#home"><span class="logo-mark crest-mark"><img alt="El Gouna FC logo" src="logos/elgouna.png"/></span><span><span data-t="brand">الجونة</span><small>RED SEA · EGYPT</small></span></a>
+<div class="links" id="links">
+<a data-t="navStory" href="#story">الحكاية</a><a data-t="navResults" href="#results">النتائج</a><a data-t="navStadium" href="#stadium">الاستاد</a><a data-t="navHistory" href="#history">المحطات</a><a data-t="navLegends" href="#legends">اللاعبون</a><a data-t="navGallery" href="#gallery">المدرجات</a>
+</div>
+<div class="actions"><button class="lang" id="lang" type="button">EN / عربي</button><button aria-expanded="false" aria-label="Open navigation" class="menu" id="menu">☰</button></div>
+</nav>
+</header>
+<header class="hero" id="home">
+<div class="wrap"><div class="hero-copy">
+<div class="tag" data-t="eyebrow">من قلب البحر الأحمر</div>
+<h1 data-t="heroTitle">حكاية كورة…<span>بطعم البحر.</span></h1>
+<p data-t="heroDesc">هنا البحر له لون، والكورة لها صوت. حكاية نادي الجونة ومواجهاته مع أكبر أندية مصر، من قلب البحر الأحمر إلى ليالي الدوري المصري.</p>
+<div class="buttons"><a class="btn primary" data-t="ctaResults" href="#results">شوف النتائج ↓</a><a class="btn secondary" data-t="ctaStadium" href="#stadium">عيش أجواء الماتش</a></div>
+</div></div>
+<div class="hero-foot wrap"><b>EL GOUNA FC</b>/　A RED SEA FOOTBALL STORY</div>
+</header>
+<div class="stats-holder wrap"><div class="stats">
+<div class="stat"><strong>2003</strong><span data-t="statFounded">عام التأسيس</span></div>
+<div class="stat"><strong>RED SEA</strong><span data-t="statHome">البيت في البحر الأحمر</span></div>
+<div class="stat"><strong>90′</strong><span data-t="statPassion">تسعين دقيقة من الشغف</span></div>
+<div class="stat"><strong>2 RIVALS</strong><span data-t="statRivals">الأهلي والزمالك على نفس الأرض</span></div>
+</div></div>
+<main>
+<section class="section wrap" id="story">
+<div class="section-head"><div><div class="eyebrow" data-t="storyEyebrow">THE CLUB / النادي</div><h2 data-t="storyTitle">مش مجرد<br/>90 دقيقة.</h2></div><p data-t="storyIntro">نادي الجونة حكاية مدينة على البحر الأحمر، وطموح كروي صنع لنفسه مكانًا في الكرة المصرية. وكل مواجهة كبيرة بتضيف فصل جديد للحكاية.</p></div>
+<div class="story-grid">
+<article class="story"><img alt="ملعب كرة قدم تحت الأضواء" loading="lazy" src="https://elgounafc.wordpress.com/wp-content/uploads/2009/08/airportend101109copyright.jpg"/><div class="story-copy"><small>01 / THE BEGINNING</small><h3 data-t="story1Title">من البحر بدأت الحكاية</h3><p data-t="story1Desc">هوية مختلفة، وطموح يكبر موسم بعد موسم، وسط منافسة لا تهدأ.</p></div></article>
+<div class="stack">
+<article class="story"><img alt="جماهير كرة القدم في المدرجات" loading="lazy" src="https://elgounafc.wordpress.com/wp-content/uploads/2009/08/airportend101109copyright.jpg"/><div class="story-copy"><small>02 / THE CROWD</small><h3 data-t="story2Title">اللعبة للناس</h3><p data-t="story2Desc">هتاف، توتر، وفرحة بتعيش بعد صافرة النهاية.</p></div></article>
+<article class="story"><img alt="مباراة كرة قدم" loading="lazy" src="https://elgounafc.wordpress.com/wp-content/uploads/2009/08/packedtotherafters180309.jpg"/><div class="story-copy"><small>03 / MATCH NIGHT</small><h3 data-t="story3Title">ليلة ماتش كبيرة</h3><p data-t="story3Desc">كل كرة ممكن تغيّر شكل الليلة.</p></div></article>
+</div></div>
+</section>
+<section class="section results" id="results"><div class="wrap">
+<div class="result-head"><div><div class="eyebrow" data-t="resultsEyebrow">HEAD TO HEAD / سجل المواجهات</div><h2 data-t="resultsTitle">الأرقام بتحكي.</h2><p data-t="resultsIntro">هنا هتلاقي الانتصارات الموثقة للجونة فقط أمام الأهلي والزمالك. التعادلات والهزائم مش معروضة في لوحة النتائج.</p></div>
+<div aria-label="Choose opponent" class="tabs" role="tablist"><button aria-selected="true" class="tab" data-t="ahly" data-team="ahly" role="tab">الأهلي</button><button aria-selected="false" class="tab" data-t="zamalek" data-team="zamalek" role="tab">الزمالك</button></div></div>
+<div class="feature-result">
+<div class="feature-image"><img alt="ملعب كرة قدم" id="resultImage" loading="lazy" src="https://img.youm7.com/xlarge/s2201415162216.jpg"/></div>
+<div class="feature-copy">
+<div class="match-label" id="featureLabel">FEATURED RESULT</div>
+<div class="scoreboard">
+<div class="team"><div class="team-logo"><img alt="El Gouna FC" src="logos/elgouna.png"/></div><span data-t="elgouna">الجونة</span></div>
+<div class="goals" id="featureScore">1 — 0</div>
+<div class="team"><div class="team-logo rival-crest" id="opponentLogo">AFC</div><span id="opponentName">الأهلي</span></div>
+</div>
+<h3 id="featureTitle">الجونة 1–0 الأهلي</h3>
+<p id="featureDesc">فوز تاريخي للجونة على الأهلي، 15 فبراير 2014.</p>
+<div id="featureWinBadge"></div>
+</div></div>
+<div class="result-grid" id="resultGrid"></div>
+<p class="note" data-t="resultsNote">المعروض هنا انتصارات موثقة مختارة فقط، وليس سجلًا كاملًا لكل انتصارات النادي. لا توجد تعادلات أو هزائم في هذه اللوحة.</p>
+</div></section>
+<section class="section wrap wins-clubs" id="big-wins">
+<div class="section-head"><div><div class="eyebrow" data-t="winsEyebrow">BIG WINS / انتصارات كبيرة</div><h2 data-t="winsTitle">كبار وقعوا أمام الجونة.</h2></div><p data-t="winsIntro">شعارات الأندية الكبيرة التي تظهر هنا مرتبطة بانتصارات موثقة للجونة، وليست مجرد مواجهات.</p></div>
+<div class="wins-club-grid">
+
+  <!-- Al Ahly -->
+  <article class="wins-club">
+    <img
+      src="logos/ahly.jpg"
+      alt="شعار النادي الأهلي"
+      data-crest="ahly"
+      loading="lazy"
+      
+    />
+    <div>
+      <h3 data-t="winsAhly">الأهلي</h3>
+      <strong>1–0</strong>
+      <p data-t="winsAhlyDate">15 فبراير 2014 · استاد الجونة</p>
+    </div>
+    <span class="win-stamp" data-t="winStamp">فوز الجونة</span>
+  </article>
+
+  <!-- Zamalek -->
+  <article class="wins-club">
+    <img
+      src="logos/zamalek.jpg"
+      alt="شعار نادي الزمالك"
+      data-crest="zamalek"
+      loading="lazy"
+    />
+    <div>
+      <h3 data-t="winsZamalek">الزمالك</h3>
+      <strong>3–2</strong>
+      <p data-t="winsZamalekDate">12 مارس 2024 · استاد خالد بشارة</p>
+    </div>
+    <span class="win-stamp" data-t="winStamp">فوز الجونة</span>
+  </article>
+
+</div>
+</section>
+<section class="section wrap" id="stadium"><div class="stadium">
+<div class="photo"><img alt="أجواء جماهيرية في استاد كرة قدم" loading="lazy" src="https://elgounafc.wordpress.com/wp-content/uploads/2009/08/packedtotherafters180309.jpg"/><span class="photo-label">KHALED BISHARA STADIUM</span></div>
+<div class="copy"><div class="eyebrow" data-t="stadiumEyebrow">THE STAGE / خشبة المواجهة</div><h2 data-t="stadiumTitle">استاد واحد.<br/>حكايات كتير.</h2>
+<p data-t="stadiumP1">في كرة القدم، الملعب مش مجرد عشب وخطوط. هو المكان اللي بتتقابل فيه طموحات الفرق وضغط المنافسة وصوت الجمهور. واستاد خالد بشارة كان مسرحًا لمواجهات الجونة أمام الأهلي والزمالك.</p>
+<p data-t="stadiumP2">من انتصارات حاسمة وأهداف في لحظات فارقة، كل فوز له حكايته الخاصة في ذاكرة جمهور الجونة.</p>
+<div class="quote"><span data-t="quote">«الملعب واحد… لكن كل مواجهة ليها حكاية.»</span><small>EL GOUNA MATCHDAY</small></div></div>
+</div></section>
+<section class="section wrap derby-section" id="cairo-derby">
+<div class="section-head"><div><div class="eyebrow" data-t="derbyEyebrow">THE CAIRO DERBY / قمة القاهرة</div><h2 data-t="derbyTitle">قمة الأهلي والزمالك…<br>على أرض الجونة.</h2></div><p data-t="derbyIntro">استضاف استاد الجونة مباراة الأهلي والزمالك في دوري أبطال أفريقيا يوم 24 يوليو 2013، بعدما نُقلت المواجهة إلى ملعب محايد لأسباب أمنية. الصور التالية من تغطية رويترز للمباراة نفسها.</p></div>
+<div class="derby-banner">
+<div class="derby-clubs"><div class="derby-club"><img data-crest="ahly" alt="شعار الأهلي"><strong data-t="ahly">الأهلي</strong></div><span class="derby-vs">VS</span><div class="derby-club"><img data-crest="zamalek" alt="شعار الزمالك"><strong data-t="zamalek">الزمالك</strong></div></div>
+<div class="derby-meta"><strong>24 JUL 2013</strong><span data-t="derbyCompetition">CAF Champions League · Group Stage</span><span data-t="derbyVenue">Gouna Stadium · El Gouna, Egypt</span></div>
+</div>
+<div class="derby-gallery">
+<figure><a href="https://www.reutersconnect.com/item/zamaleks-omar-gaber-celebrates-after-scoring-a-goal-against-derby-rivals-al-ahly-during-their-caf-champions-league-soccer-match-at-el-gouna-stadium-in-hurghada/dGFnOnJldXRlcnMuY29tLDIwMTM6bmV3c21sX0dNMUU5N08xVUJNMDE" target="_blank" rel="noopener"><img src="https://www.reutersconnect.com/_next/image?q=75&url=https%3A%2F%2Fcdn1.agency.thomsonreuters.com%2Fwatermark%2Ftag%3Areuters.com%2C2013%3Anewsml_GM1E97O1UBM01%3A412958755%2Ftag%3Areuters.com%2C2013%3Abinary_GM1E97O1UBM01-VIEWIMAGE%2F800x800%3Fpartner%3Dfalse%26Expires%3D2107791254%26Signature%3DBrT32oDCb3sI0mbAzZXS5ynYxRx8h9D9p0qc9qckhhfvJZv~Ml~OimRch-l9Ne1yn94v3afjzFgdISWSa3okcYQlIcr~EjJ9n0V4J7KoUCT-WJEuArlPPQs2X~Ljj8G~DB~s1L5-9olRiGGcxv33fMNmqWcQWBpP-FKB9pyjf9dnREkfhA7BRphZ6Hcmf-q1C5UZxkaHxqLB8JBhlXnrJWnhKqG2eHVGeKTEkkMSn5svFQ1fMDC9fWO-B60E9sq~OlfG1yf6-sF~RIhpCOA4OTvV5YjUQz3eVPiAbpw9tcIF6N-OuNNWMPREXuncQ9Hq1UOp5t-D1FFqYrsjq2Ojyg__%26Key-Pair-Id%3DAPKAJ7VIBMO3UCTTZSWQ&w=3840" alt="عمر جابر يحتفل بهدف للزمالك أمام الأهلي في استاد الجونة يوم 24 يوليو 2013" loading="lazy"></a><figcaption data-t="derbyPhoto1">عمر جابر يحتفل بهدف الزمالك — صورة رويترز</figcaption></figure>
+<figure><a href="https://www.reutersconnect.com/item/zamaleks-omar-gaber-celebrates-with-team-mates-after-scoring-a-goal-against-derby-rivals-al-ahly-during-their-caf-champions-league-soccer-match-at-el-gouna-stadium-in-hurghada/dGFnOnJldXRlcnMuY29tLDIwMTM6bmV3c21sX0dNMUU5N1AwMTlGMDE" target="_blank" rel="noopener"><img src="https://www.reutersconnect.com/_next/image?q=75&url=https%3A%2F%2Fcdn1.agency.thomsonreuters.com%2Fwatermark%2Ftag%3Areuters.com%2C2013%3Anewsml_GM1E97P019F01%3A1796744408%2Ftag%3Areuters.com%2C2013%3Abinary_GM1E97P019F01-VIEWIMAGE%2F800x800%3Fpartner%3Dfalse%26Expires%3D2099598197%26Signature%3DBM8TtMvEmUM5xcwmYp7MimkhnAol6nghzswp1htmnzAuhqo4sk4nAzfVLaebJ1kSTrHPZvsJuqH0KIQU0qFGmXaOVkmuLB7TGOf9kRn7tRiRjf08D4sLTwoxfL52piVi86fXjL58nq2Y~kQEvuCGCsNAclbMDj56cNz8kNpSV0I1wg6CEX1jn-YWZSYMscK1pPyrSHIetXWyeMIEwXumyIcIt~yWSFcukXFJ~wJqAfcjIWVEO2b3ep~KVWR6VhL6jmf8FFXsF5fMTiOVi-W5LYQcJ5goe0XgWjasVqBaQnLj4~qs2RjZ~3bFZMnSYpwQXJ-1K8r36ARQHC-X6bUmPQ__%26Key-Pair-Id%3DAPKAJ7VIBMO3UCTTZSWQ&w=3840" alt="لاعبو الزمالك يحتفلون خلال مواجهة الأهلي في استاد الجونة عام 2013" loading="lazy"></a><figcaption data-t="derbyPhoto2">احتفال لاعبي الزمالك خلال القمة — صورة رويترز</figcaption></figure>
+</div>
+<p class="match-gallery-note" data-t="derbyCredit">مصدر الصور: Reuters Connect. الصور الصحفية تحمل علامة مائية، وقد يتطلب استخدامها التجاري أو إعادة نشرها الحصول على ترخيص.</p>
+</section>
+<section class="section wrap" id="history">
+<div class="section-head"><div><div class="eyebrow" data-t="historyEyebrow">THE JOURNEY / الرحلة</div><h2 data-t="historyTitle">محطات في مشوار الجونة.</h2></div><p data-t="historyIntro">من البدايات إلى منافسة الكبار، فصول متتالية في رحلة نادي اختار يبني هويته على ساحل البحر الأحمر.</p></div>
+<div class="timeline">
+<article class="time"><strong>2003</strong><h3 data-t="time1Title">بداية الحكاية</h3><p data-t="time1Desc">تأسيس نادي الجونة الرياضي.</p></article>
+<article class="time"><strong>2008–09</strong><h3 data-t="time2Title">الممتاز</h3><p data-t="time2Desc">الوصول إلى الدوري المصري الممتاز.</p></article>
+<article class="time"><strong>2010s</strong><h3 data-t="time3Title">مواجهات الكبار</h3><p data-t="time3Desc">مباريات قوية أمام أندية القمة.</p></article>
+<article class="time"><strong>NOW</strong><h3 data-t="time4Title">الحكاية مستمرة</h3><p data-t="time4Desc">فصل جديد ينتظر جماهير الجونة.</p></article>
+</div>
+</section>
+<section class="section wrap" id="legends">
+<div class="section-head"><div><div class="eyebrow" data-t="legendsEyebrow">THE NAMES / أسماء من التاريخ</div><h2 data-t="legendsTitle">وجوه من ذاكرة الجونة.</h2></div><p data-t="legendsIntro">أسماء ارتبطت بمشوار النادي عبر سنوات مختلفة. الاختيار هنا تكريمي ومبدئي، وليس ترتيبًا رسميًا لأفضل لاعبي النادي.</p></div>
+<div class="legends-grid">
+<article class="legend-card"><span class="legend-number">01</span><h3>جدو · Gedo</h3><p data-t="legendGedo">مهاجم مصري سابق، لعب بقميص الجونة ضمن محطات مشواره الكروي.</p></article>
+<article class="legend-card"><span class="legend-number">02</span><h3>وائل رياض · Wael Reyad</h3><p data-t="legendWael">لاعب الأهلي السابق المعروف باسم شيتوس، ومن الأسماء التي ظهرت في سجل لاعبي الجونة.</p></article>
+<article class="legend-card"><span class="legend-number">03</span><h3>أوكا · Ouka</h3><p data-t="legendOuka">مدافع سابق ارتبط اسمه بقائمة لاعبي الجونة في سنوات سابقة.</p></article>
+<article class="legend-card"><span class="legend-number">04</span><h3>شريف أشرف · Sherif Ashraf</h3><p data-t="legendSherif">مهاجم مصري سابق، لعب للجونة ضمن مسيرته في الكرة المصرية.</p></article>
+<article class="legend-card"><span class="legend-number">05</span><h3>جمال حمزة · Gamal Hamza</h3><p data-t="legendGamal">مهاجم دولي سابق لعب للجونة في فترتين، بعد مشواره مع الزمالك.</p></article>
+</div>
+<p class="note" data-t="legendsNote">الأسماء مستندة إلى أرشيف لاعبي النادي المنشور، وقد تختلف تعريفات «اللاعب التاريخي» حسب جمهور النادي.</p>
+</section>
+<section class="section wrap" id="gallery">
+<div class="section-head"><div><div class="eyebrow" data-t="galleryEyebrow">STANDS & EMOTIONS / المدرجات</div><h2 data-t="galleryTitle">صوت المدرجات… روح اللعبة.</h2></div><p data-t="galleryIntro">من أضواء الملعب إلى لحظة الاحتفال، كرة القدم تجمع الناس على شغف واحد.</p></div>
+<div class="gallery">
+<figure><img alt="فوز الجونة على الأهلي 1-0 يوم 15 فبراير 2014" loading="lazy" src="https://img.youm7.com/xlarge/s2201415162216.jpg"/><figcaption data-t="gallery1">فوز الجونة على الأهلي · 2014</figcaption></figure>
+<figure><img alt="لقطة من مباراة الجونة والزمالك 12 مارس 2024" loading="lazy" src="https://cdn.vetogate.com/UploadCache/libfiles/491/6/0x0o/843.webp"/><figcaption data-t="gallery2">من مباراة الفوز على الزمالك</figcaption></figure>
+<figure><img alt="من أحداث مباراة الجونة والزمالك 3-2" loading="lazy" src="https://cdn.vetogate.com/UploadCache/libfiles/491/6/0x0o/844.webp"/><figcaption data-t="gallery3">هدف وحسم · 2024</figcaption></figure>
+<figure><img alt="لقطة أخرى من مباراة الجونة والزمالك" loading="lazy" src="https://cdn.vetogate.com/UploadCache/libfiles/491/6/0x0o/850.webp"/><figcaption data-t="gallery4">صراع على كل كرة</figcaption></figure>
+<figure><img alt="مدرجات استاد الجونة من الأرشيف" loading="lazy" src="https://elgounafc.wordpress.com/wp-content/uploads/2009/08/packedtotherafters180309.jpg"/><figcaption data-t="gallery5">مدرجات الاستاد · أرشيف تاريخي</figcaption></figure>
+</div>
+</section>
+<section class="closing wrap"><div class="closing-box">
+<div class="eyebrow">ONE STADIUM. MANY STORIES.</div>
+<h2 data-t="closingTitle">الأهلي والزمالك…<br/>والجونة حاضرة في المشهد.</h2>
+<p data-t="closingDesc">النتيجة بتتحفظ في الأرقام، لكن روح المباراة بتفضل في ذاكرة الجمهور. دي حكاية الجونة، ولسه فيها فصول جاية.</p>
+<a class="btn primary" data-t="backTop" href="#home">ارجع للبداية ↑</a>
+</div></section>
+</main>
+<footer class="footer"><div class="wrap footer-inner"><strong data-t="footerBrand">الجونة الرياضي · حكاية من البحر الأحمر</strong><span data-t="footerNote">تصميم تصوري غير رسمي. صور قمة 2013 من Reuters Connect، وصور الاستاد التاريخية من أرشيف 2009. تحقق من تراخيص الصور قبل إعادة النشر التجاري.</span></div></footer>
+<script>
+/* ===== شعارات الأندية من ملفات اللابتوب =====
+   ضع مجلد logos بجوار ملف HTML ويحتوي على:
+   ahly.jpg و zamalek.jpg و elgouna.png
+   لا توجد روابط بديلة أونلاين للشعارات.
+*/
+const CRESTS={
+ ahly:{file:'logos/ahly.jpg'},
+ zamalek:{file:'logos/zamalek.jpg'}
+};
+function crestSrc(k){return CRESTS[k].file}
+function crestImg(k,alt){return `<img src="${crestSrc(k)}" alt="${alt}">`}
+document.querySelectorAll('img[data-crest]').forEach(img=>{
+ const k=img.dataset.crest;
+ if(!CRESTS[k]) return;
+ img.src=crestSrc(k);
+});
+
+const copy={ar:{brand:'الجونة',navStory:'الحكاية',navResults:'النتائج',navStadium:'الاستاد',navHistory:'المحطات',navLegends:'اللاعبون',navGallery:'المدرجات',eyebrow:'من قلب البحر الأحمر',heroTitle:'حكاية كورة…<span>بطعم البحر.</span>',heroDesc:'هنا البحر له لون، والكورة لها صوت. حكاية نادي الجونة ومواجهاته مع أكبر أندية مصر، من قلب البحر الأحمر إلى ليالي الدوري المصري.',ctaResults:'شوف النتائج ↓',ctaStadium:'عيش أجواء الماتش',statFounded:'عام التأسيس',statHome:'البيت في البحر الأحمر',statPassion:'تسعين دقيقة من الشغف',statRivals:'الأهلي والزمالك على نفس الأرض',storyEyebrow:'THE CLUB / النادي',storyTitle:'مش مجرد<br>90 دقيقة.',storyIntro:'نادي الجونة حكاية مدينة على البحر الأحمر، وطموح كروي صنع لنفسه مكانًا في الكرة المصرية. وكل مواجهة كبيرة بتضيف فصل جديد للحكاية.',story1Title:'من البحر بدأت الحكاية',story1Desc:'هوية مختلفة، وطموح يكبر موسم بعد موسم، وسط منافسة لا تهدأ.',story2Title:'اللعبة للناس',story2Desc:'هتاف، توتر، وفرحة بتعيش بعد صافرة النهاية.',story3Title:'ليلة ماتش كبيرة',story3Desc:'كل كرة ممكن تغيّر شكل الليلة.',resultsEyebrow:'HEAD TO HEAD / سجل المواجهات',resultsTitle:'الأرقام بتحكي.',resultsIntro:'هنا هتلاقي الانتصارات الموثقة للجونة فقط أمام الأهلي والزمالك. التعادلات والهزائم مش معروضة في لوحة النتائج.',ahly:'الأهلي',zamalek:'الزمالك',elgouna:'الجونة',resultsNote:'المعروض هنا انتصارات موثقة مختارة فقط، وليس سجلًا كاملًا لكل انتصارات النادي. لا توجد تعادلات أو هزائم في هذه اللوحة.',stadiumEyebrow:'THE STAGE / خشبة المواجهة',stadiumTitle:'استاد واحد.<br>حكايات كتير.',stadiumP1:'في كرة القدم، الملعب مش مجرد عشب وخطوط. هو المكان اللي بتتقابل فيه طموحات الفرق وضغط المنافسة وصوت الجمهور. واستاد خالد بشارة كان مسرحًا لمواجهات الجونة أمام الأهلي والزمالك.',stadiumP2:'من انتصارات حاسمة وأهداف في لحظات فارقة، كل فوز له حكايته الخاصة في ذاكرة جمهور الجونة.',quote:'«الملعب واحد… لكن كل مواجهة ليها حكاية.»',legendsEyebrow:'THE NAMES / أسماء من التاريخ',legendsTitle:'وجوه من ذاكرة الجونة.',legendsIntro:'أسماء ارتبطت بمشوار النادي عبر سنوات مختلفة. الاختيار هنا تكريمي ومبدئي، وليس ترتيبًا رسميًا لأفضل لاعبي النادي.',legendGedo:'مهاجم مصري سابق، لعب بقميص الجونة ضمن محطات مشواره الكروي.',legendWael:'لاعب الأهلي السابق المعروف باسم شيتوس، ومن الأسماء التي ظهرت في سجل لاعبي الجونة.',legendOuka:'مدافع سابق ارتبط اسمه بقائمة لاعبي الجونة في سنوات سابقة.',legendSherif:'مهاجم مصري سابق، لعب للجونة ضمن مسيرته في الكرة المصرية.',legendGamal:'مهاجم دولي سابق لعب للجونة في فترتين، بعد مشواره مع الزمالك.',derbyEyebrow:'THE CAIRO DERBY / قمة القاهرة',derbyTitle:'قمة الأهلي والزمالك…<br>على أرض الجونة.',derbyIntro:'استضاف استاد الجونة مباراة الأهلي والزمالك في دوري أبطال أفريقيا يوم 24 يوليو 2013، بعدما نُقلت المواجهة إلى ملعب محايد لأسباب أمنية. الصور التالية من تغطية رويترز للمباراة نفسها.',derbyCompetition:'دوري أبطال أفريقيا · دور المجموعات',derbyVenue:'استاد الجونة · الجونة، مصر',derbyPhoto1:'عمر جابر يحتفل بهدف الزمالك — صورة رويترز',derbyPhoto2:'احتفال لاعبي الزمالك خلال القمة — صورة رويترز',derbyCredit:'مصدر الصور: Reuters Connect. الصور الصحفية تحمل علامة مائية، وقد يتطلب استخدامها التجاري أو إعادة نشرها الحصول على ترخيص.',legendsNote:'الأسماء مستندة إلى أرشيف لاعبي النادي المنشور، وقد تختلف تعريفات «اللاعب التاريخي» حسب جمهور النادي.',historyEyebrow:'THE JOURNEY / الرحلة',historyTitle:'محطات في مشوار الجونة.',historyIntro:'من البدايات إلى منافسة الكبار، فصول متتالية في رحلة نادي اختار يبني هويته على ساحل البحر الأحمر.',time1Title:'بداية الحكاية',time1Desc:'تأسيس نادي الجونة الرياضي.',time2Title:'الممتاز',time2Desc:'الوصول إلى الدوري المصري الممتاز.',time3Title:'مواجهات الكبار',time3Desc:'مباريات قوية أمام أندية القمة.',time4Title:'الحكاية مستمرة',time4Desc:'فصل جديد ينتظر جماهير الجونة.',galleryEyebrow:'STANDS & EMOTIONS / المدرجات',galleryTitle:'صوت المدرجات… روح اللعبة.',galleryIntro:'من أضواء الملعب إلى لحظة الاحتفال، كرة القدم تجمع الناس على شغف واحد.',gallery1:'فوز الجونة على الأهلي · 2014',gallery2:'من مباراة الفوز على الزمالك',gallery3:'هدف وحسم · 2024',gallery4:'صراع على كل كرة',gallery5:'مدرجات الاستاد · أرشيف تاريخي',closingTitle:'الأهلي والزمالك…<br>والجونة حاضرة في المشهد.',closingDesc:'النتيجة بتتحفظ في الأرقام، لكن روح المباراة بتفضل في ذاكرة الجمهور. دي حكاية الجونة، ولسه فيها فصول جاية.',backTop:'ارجع للبداية ↑',footerBrand:'الجونة الرياضي · حكاية من البحر الأحمر',footerNote:'تصميم تصوري غير رسمي. صور قمة 2013 من Reuters Connect، وصور الاستاد التاريخية من أرشيف 2009. تحقق من تراخيص الصور قبل إعادة النشر التجاري.',winsEyebrow:'BIG WINS / انتصارات كبيرة',winsTitle:'كبار وقعوا أمام الجونة.',winsIntro:'شعارات الأندية الكبيرة التي تظهر هنا مرتبطة بانتصارات موثقة للجونة، وليست مجرد مواجهات.',winsAhly:'الأهلي',winsZamalek:'الزمالك',winsAhlyDate:'15 فبراير 2014 · استاد الجونة',winsZamalekDate:'12 مارس 2024 · استاد خالد بشارة',winStamp:'فوز الجونة'},en:{brand:'El Gouna',navStory:'The Story',navResults:'Results',navStadium:'The Stadium',navHistory:'Milestones',navLegends:'Legends',navGallery:'The Stands',eyebrow:'From the heart of the Red Sea',heroTitle:'A football story…<span>with a sea breeze.</span>',heroDesc:'The sea has its colours, and football has its voice. Discover El Gouna FC and its matchups with Egypt’s biggest clubs, from the Red Sea coast to Egyptian league nights.',ctaResults:'Explore results ↓',ctaStadium:'Feel matchday',statFounded:'Year founded',statHome:'Home on the Red Sea',statPassion:'90 minutes of passion',statRivals:'Al Ahly and Zamalek on the same ground',storyEyebrow:'THE CLUB / THE STORY',storyTitle:'More than<br>90 minutes.',storyIntro:'El Gouna is a Red Sea city’s football story and a club that carved out its own place in Egyptian football. Every big fixture adds another chapter.',story1Title:'A story born by the sea',story1Desc:'A distinct identity and ambition growing season after season.',story2Title:'The game belongs to the people',story2Desc:'Chants, nerves and joy that last beyond the final whistle.',story3Title:'A big match night',story3Desc:'One moment can change the whole night.',resultsEyebrow:'HEAD TO HEAD / RESULTS',resultsTitle:'The numbers tell a story.',resultsIntro:'Only documented El Gouna victories over Al Ahly and Zamalek are shown here. Draws and defeats are intentionally excluded.',ahly:'Al Ahly',zamalek:'Zamalek',elgouna:'El Gouna',resultsNote:'These are selected, documented victories only, not a complete all-time record of every El Gouna win.',stadiumEyebrow:'THE STAGE / THE SHOWDOWN',stadiumTitle:'One stadium.<br>Countless stories.',stadiumP1:'In football, a ground is more than grass and lines. It brings together ambition, competitive pressure and supporters’ voices. Khaled Bishara Stadium has hosted El Gouna fixtures against both Al Ahly and Zamalek.',stadiumP2:'From decisive wins to late goals, every victory has its own place in El Gouna supporters’ memory.',quote:'“One ground. Every fixture tells a different story.”',legendsEyebrow:'THE NAMES / CLUB HISTORY',legendsTitle:'Names in El Gouna’s memory.',legendsIntro:'Players associated with the club across different seasons. This is a preliminary tribute, not an official ranking of the club’s greatest players.',legendGedo:'Former Egyptian striker who represented El Gouna during his playing career.',legendWael:'Former Al Ahly player known as Shitos, also listed among El Gouna’s former players.',legendOuka:'Former defender included in historical lists of El Gouna players.',legendSherif:'Former Egyptian striker who represented El Gouna during his career.',legendGamal:'Former Egypt international forward who played for El Gouna in two spells after his time at Zamalek.',derbyEyebrow:'THE CAIRO DERBY / HISTORIC MATCH',derbyTitle:'Al Ahly vs Zamalek…<br>on El Gouna soil.',derbyIntro:'El Gouna Stadium hosted Al Ahly vs Zamalek in the CAF Champions League on 24 July 2013 after the fixture was moved to a neutral venue for security reasons. These photos are from Reuters coverage of that match.',derbyCompetition:'CAF Champions League · Group Stage',derbyVenue:'Gouna Stadium · El Gouna, Egypt',derbyPhoto1:'Omar Gaber celebrates a Zamalek goal — Reuters photo',derbyPhoto2:'Zamalek players celebrate during the derby — Reuters photo',derbyCredit:'Photo source: Reuters Connect. The editorial images are watermarked; commercial reuse or republication may require a license.',legendsNote:'Names are based on published club alumni records; what counts as a club legend can vary among supporters.',historyEyebrow:'THE JOURNEY / MILESTONES',historyTitle:'Key moments in El Gouna’s journey.',historyIntro:'From the early days to competing with the biggest sides, a club building its identity on the Red Sea coast.',time1Title:'The beginning',time1Desc:'El Gouna Sports Club is founded.',time2Title:'The top flight',time2Desc:'Reaching Egypt’s Premier League.',time3Title:'Big-club matchups',time3Desc:'Competitive fixtures against top sides.',time4Title:'The story continues',time4Desc:'Another chapter awaits El Gouna supporters.',galleryEyebrow:'STANDS & EMOTIONS',galleryTitle:'The roar of the stands. The soul of the game.',galleryIntro:'From stadium lights to celebrations, football brings people together through shared passion.',gallery1:'El Gouna beat Al Ahly · 2014',gallery2:'From the win over Zamalek',gallery3:'A goal that decided it · 2024',gallery4:'Every ball matters',gallery5:'Stadium stands · historical archive',closingTitle:'Al Ahly. Zamalek.<br>El Gouna in the picture.',closingDesc:'Scores live in the record books, but the spirit of a match lives on with supporters. This is El Gouna’s story, with more chapters ahead.',backTop:'Back to the top ↑',footerBrand:'El Gouna FC · A Red Sea story',footerNote:'Unofficial concept design. Match photos are from press coverage; the stands photo is from the historical stadium archive (2009). The scoreboard shows documented wins only.',winsEyebrow:'BIG WINS',winsTitle:'Big names beaten by El Gouna.',winsIntro:'The club crests shown here are tied to documented El Gouna victories, not just head-to-head fixtures.',winsAhly:'Al Ahly',winsZamalek:'Zamalek',winsAhlyDate:'15 February 2014 · El Gouna Stadium',winsZamalekDate:'12 March 2024 · Khaled Bishara Stadium',winStamp:'El Gouna win'}};
+const games={
+ahly:[{date:'15 FEB 2014',score:'1 — 0',image:'https://img.youm7.com/xlarge/s2201415162216.jpg',title:{ar:'الجونة 1–0 الأهلي',en:'El Gouna 1–0 Al Ahly'},desc:{ar:'فوز للجونة على الأهلي · الدوري المصري الممتاز',en:'El Gouna victory over Al Ahly · Egyptian Premier League'}}],
+zamalek:[{date:'12 MAR 2024',score:'3 — 2',image:'https://cdn.vetogate.com/UploadCache/libfiles/491/6/0x0o/843.webp',title:{ar:'الجونة 3–2 الزمالك',en:'El Gouna 3–2 Zamalek'},desc:{ar:'فوز للجونة على الزمالك · الدوري المصري الممتاز',en:'El Gouna victory over Zamalek · Egyptian Premier League'}}]
+};
+let language='ar',selected='ahly';
+function renderResults(key){
+ selected=key;const first=games[key][0];
+ document.querySelectorAll('[data-team]').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.team===key)));
+ document.getElementById('featureLabel').textContent=(language==='ar'?'فوز موثق / ':'DOCUMENTED WIN / ')+first.date;
+ const img=document.getElementById('resultImage');img.src=first.image;img.alt=first.title[language];
+ document.getElementById('featureScore').textContent=first.score;
+ document.getElementById('featureTitle').textContent=first.title[language];
+ document.getElementById('featureDesc').textContent=first.desc[language];
+ const nameEn=key==='ahly'?'Al Ahly':'Zamalek';
+ document.getElementById('featureWinBadge').innerHTML=`<div class="winner-badge">${crestImg(key,nameEn+' crest')}<span>${language==='ar'?'فوز الجونة':'El Gouna victory'}</span></div>`;
+ document.getElementById('opponentName').textContent=language==='ar'?(key==='ahly'?'الأهلي':'الزمالك'):nameEn;
+ document.getElementById('opponentLogo').innerHTML=crestImg(key,nameEn+' logo');
+ document.getElementById('resultGrid').innerHTML='';
+}
+function setLang(lang){
+ language=lang;document.documentElement.lang=lang;document.documentElement.dir=lang==='ar'?'rtl':'ltr';
+ document.body.classList.toggle('en',lang==='en');
+ document.querySelectorAll('[data-t]').forEach(el=>{const k=el.dataset.t;if(copy[lang][k]!==undefined)el.innerHTML=copy[lang][k]});
+ document.getElementById('lang').textContent=lang==='ar'?'EN / عربي':'عربي / EN';
+ renderResults(selected);
+}
+document.getElementById('lang').addEventListener('click',()=>setLang(language==='ar'?'en':'ar'));
+document.querySelectorAll('[data-team]').forEach(b=>b.addEventListener('click',()=>renderResults(b.dataset.team)));
+const menu=document.getElementById('menu'),links=document.getElementById('links');
+menu.addEventListener('click',()=>{const o=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(o));menu.textContent=o?'✕':'☰'});
+links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));
+setLang('ar');
+</script>
+</body>
+</html>
